@@ -1,371 +1,299 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import FraudBanner from './FraudBanner';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const t = useTranslations('header');
   const tNav = useTranslations('nav');
-  const locale = useLocale();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [mobileAboutSubOpen, setMobileAboutSubOpen] = useState(false);
 
   return (
-    <header className="site-header">
-      {/* 1. Official Fraud Prevention Banner */}
-      <FraudBanner />
-
-      {/* 2. Main Navigation Bar with Exact Elementor Structure */}
-      <div
-        className="elementor-element elementor-element-3d9331fe e-flex e-con-boxed e-con e-parent"
-        data-id="3d9331fe"
-        data-element_type="container"
-        data-e-type="container"
-        data-settings='{"background_background":"classic"}'
-        style={{ position: 'relative', zIndex: 50, background: '#FFFFFF' }}
+    <>
+      {/* ======================================================== */}
+      {/* KIRIMA RISE CUSTOM BRAND HEADER                            */}
+      {/* Fully mirrored from brand guidelines (Pantone 2357 C & 3537 C) */}
+      {/* ======================================================== */}
+      <header
+        className={`kr-brand-header ${mobileMenuOpen ? 'kr-mobile-menu-active' : ''}`}
+        id="kr-site-header"
       >
-        <div className="e-con-inner">
-          <div
-            className="elementor-element elementor-element-2e6560ab e-con-full e-flex e-con e-child"
-            data-id="2e6560ab"
-            data-element_type="container"
-            data-e-type="container"
-            data-settings='{"background_background":"classic"}'
-          >
-            <div
-              className="elementor-element elementor-element-1a7374ab e-con-full e-flex e-con e-child"
-              data-id="1a7374ab"
-              data-element_type="container"
-              data-e-type="container"
-              data-settings='{"background_background":"classic"}'
-            >
-              <div
-                className="elementor-element elementor-element-389ef415 elementor-widget__width-inherit hfe-nav-menu__align-left hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-navigation-menu"
-                data-id="389ef415"
-                data-element_type="widget"
-                data-e-type="widget"
-                data-widget_type="navigation-menu.default"
-              >
-                <div className="elementor-widget-container">
-                  <div
-                    className="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none"
-                    data-layout="horizontal"
+        {/* Top Fraud Alert Banner */}
+        <div
+          className="kr-brand-topbar"
+          style={{ backgroundColor: '#B01F24', color: '#FFFFFF' }}
+        >
+          <div className="kr-brand-topbar-inner">
+            <span className="kr-topbar-icon" aria-hidden="true">
+              <svg viewBox="0 0 512 512">
+                <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" />
+              </svg>
+            </span>
+            <p className="kr-topbar-text">
+              <strong>IMPORTANT</strong> &mdash; {t('fraudWarning')}
+            </p>
+          </div>
+        </div>
+
+        {/* Main Navigation Bar */}
+        <nav className="kr-brand-navbar" aria-label="Main Navigation">
+          <div className="kr-brand-navbar-inner">
+            {/* Left: Navigation Links */}
+            <div className="kr-nav-left">
+              <ul className="kr-nav-list">
+                <li className="kr-nav-item">
+                  <Link href="/" className="kr-nav-link kr-active">
+                    {tNav('home').toUpperCase()}
+                  </Link>
+                </li>
+                <li className="kr-nav-item kr-has-dropdown">
+                  <a
+                    href="#"
+                    className="kr-nav-link kr-dropdown-toggle"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    onClick={(e) => e.preventDefault()}
                   >
-                    {/* Mobile Hamburger Toggle Button */}
-                    <div
-                      role="button"
-                      className="hfe-nav-menu__toggle elementor-clickable"
-                      tabIndex={0}
-                      aria-label="Menu Toggle"
-                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    <span>{tNav('about').toUpperCase()}</span>
+                    <svg
+                      className="kr-chevron"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
-                      <span className="screen-reader-text">Menu</span>
-                      <div className="hfe-nav-menu-icon">
-                        <svg
-                          aria-hidden="true"
-                          className="e-font-icon-svg e-fas-bars"
-                          viewBox="0 0 448 512"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-                        </svg>
-                      </div>
-                    </div>
-
-                    {/* Desktop Navigation Links */}
-                    <nav className="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow">
-                      <ul id="menu-1-389ef415" className="hfe-nav-menu" style={{ alignItems: 'center' }}>
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                          <Link href="/" className="hfe-menu-item">
-                            {tNav('home')}
-                          </Link>
-                        </li>
-
-                        {/* About Us dropdown with hover/click */}
-                        <li
-                          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu"
-                          onMouseEnter={() => setAboutDropdownOpen(true)}
-                          onMouseLeave={() => setAboutDropdownOpen(false)}
-                          style={{ position: 'relative' }}
-                        >
-                          <div
-                            className="hfe-has-submenu-container"
-                            tabIndex={0}
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded={aboutDropdownOpen}
-                            onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
-                          >
-                            <span className="hfe-menu-item" style={{ cursor: 'pointer' }}>
-                              {tNav('about')}
-                              <span className="hfe-menu-toggle sub-arrow hfe-menu-child-0" style={{ marginLeft: '4px' }}>
-                                <i className="fa" style={{ fontSize: '10px' }}>▼</i>
-                              </span>
-                            </span>
-                          </div>
-                          {aboutDropdownOpen && (
-                            <ul
-                              className="sub-menu"
-                              style={{
-                                display: 'block',
-                                position: 'absolute',
-                                top: '100%',
-                                left: 0,
-                                background: '#FFFFFF',
-                                boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                                minWidth: '220px',
-                                padding: '8px 0',
-                                zIndex: 100,
-                                borderRadius: '4px',
-                                border: '1px solid #E5E7EB',
-                              }}
-                            >
-                              <li className="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
-                                <Link
-                                  href="/about-us"
-                                  className="hfe-sub-menu-item"
-                                  onClick={() => setAboutDropdownOpen(false)}
-                                >
-                                  {tNav('ourStory')}
-                                </Link>
-                              </li>
-                              <li className="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
-                                <Link
-                                  href="/our-heritage"
-                                  className="hfe-sub-menu-item"
-                                  onClick={() => setAboutDropdownOpen(false)}
-                                >
-                                  {tNav('ourHeritage')}
-                                </Link>
-                              </li>
-                            </ul>
-                          )}
-                        </li>
-
-                        {/* Plots Directory Link */}
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                          <Link href="/plots" className="hfe-menu-item">
-                            {tNav('plots')}
-                          </Link>
-                        </li>
-
-                        {/* Contact Link */}
-                        <li className="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                          <Link href="/contact" className="hfe-menu-item">
-                            {tNav('contact')}
-                          </Link>
-                        </li>
-
-                        {/* Seamless Language Switcher integrated right into the navigation */}
-                        <li className="menu-item parent hfe-creative-menu kr-lang-menu-item" style={{ display: 'inline-flex', alignItems: 'center' }}>
-                          <LanguageSwitcher />
-                        </li>
-                      </ul>
-                    </nav>
-
-                    {/* Mobile Drawer Navigation */}
-                    {mobileMenuOpen && (
-                      <div
-                        className="kr-mobile-drawer"
-                        style={{
-                          position: 'fixed',
-                          top: 0,
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          background: 'rgba(0,0,0,0.5)',
-                          zIndex: 9999,
-                          display: 'flex',
-                          flexDirection: 'column',
-                        }}
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        <div
-                          style={{
-                            width: '280px',
-                            background: '#FFFFFF',
-                            height: '100%',
-                            padding: '24px 20px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '12px',
-                            boxShadow: '4px 0 20px rgba(0,0,0,0.2)',
-                          }}
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                            <span style={{ fontWeight: 800, color: '#00491E', fontSize: '16px' }}>KIRIMA RISE</span>
-                            <button
-                              type="button"
-                              onClick={() => setMobileMenuOpen(false)}
-                              style={{ background: 'none', border: 'none', fontSize: '22px', cursor: 'pointer', color: '#1A1A1A' }}
-                            >
-                              ✕
-                            </button>
-                          </div>
-
-                          <Link
-                            href="/"
-                            style={{ padding: '10px 0', fontSize: '15px', fontWeight: 700, color: '#00491E', textDecoration: 'none' }}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {tNav('home')}
-                          </Link>
-                          <Link
-                            href="/about-us"
-                            style={{ padding: '10px 0', fontSize: '15px', fontWeight: 700, color: '#00491E', textDecoration: 'none' }}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {tNav('ourStory')}
-                          </Link>
-                          <Link
-                            href="/our-heritage"
-                            style={{ padding: '10px 0', fontSize: '15px', fontWeight: 700, color: '#00491E', textDecoration: 'none' }}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {tNav('ourHeritage')}
-                          </Link>
-                          <Link
-                            href="/plots"
-                            style={{ padding: '10px 0', fontSize: '15px', fontWeight: 700, color: '#00491E', textDecoration: 'none' }}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {tNav('plots')}
-                          </Link>
-                          <Link
-                            href="/contact"
-                            style={{ padding: '10px 0', fontSize: '15px', fontWeight: 700, color: '#00491E', textDecoration: 'none' }}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {tNav('contact')}
-                          </Link>
-
-                          <div style={{ marginTop: 'auto', paddingTop: '16px', borderTop: '1px solid #E5E7EB' }}>
-                            <div style={{ fontSize: '12px', fontWeight: 700, color: '#555555', marginBottom: '8px', textTransform: 'uppercase' }}>
-                              Language / Lugha:
-                            </div>
-                            <LanguageSwitcher isMobile={true} />
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </a>
+                  <ul className="kr-dropdown-menu">
+                    <li>
+                      <Link href="/about-us" className="kr-dropdown-link">
+                        {tNav('ourStory')}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-heritage" className="kr-dropdown-link">
+                        {tNav('ourHeritage')}
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="kr-nav-item">
+                  <Link href="/plots" className="kr-nav-link">
+                    {tNav('plots').toUpperCase()}
+                  </Link>
+                </li>
+                <li className="kr-nav-item">
+                  <Link href="/contact" className="kr-nav-link">
+                    {tNav('contact').toUpperCase()}
+                  </Link>
+                </li>
+                {/* Desktop Language Switcher */}
+                <li className="kr-nav-item" style={{ marginLeft: '6px' }}>
+                  <LanguageSwitcher />
+                </li>
+              </ul>
             </div>
 
             {/* Center: Brand Logo */}
-            <div
-              className="elementor-element elementor-element-3f63660e e-con-full e-flex e-con e-child"
-              data-id="3f63660e"
-              data-element_type="container"
-              data-e-type="container"
-              data-settings='{"background_background":"classic"}'
-            >
-              <div
-                className="elementor-element elementor-element-4e8f28e2 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
-                data-id="4e8f28e2"
-                data-element_type="widget"
-                data-e-type="widget"
-                data-widget_type="image.default"
+            <div className="kr-nav-center">
+              <Link href="/" className="kr-brand-logo-link" aria-label="Kirima Rise Home">
+                <img
+                  src="/wp-content/uploads/2026/07/cropped-Kirima-Rise-Logo-01-scaled-1-1024x637.png"
+                  alt="Kirima Rise Logo"
+                  className="kr-brand-logo-img"
+                />
+              </Link>
+            </div>
+
+            {/* Right: Action CTA & Mobile Toggle */}
+            <div className="kr-nav-right">
+              <Link href="/contact" className="kr-btn-enquire">
+                <span>{tNav('enquire').toUpperCase()}</span>
+                <svg
+                  className="kr-btn-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </Link>
+
+              {/* Mobile Hamburger Button */}
+              <button
+                type="button"
+                className="kr-mobile-toggle"
+                aria-label="Toggle navigation menu"
+                aria-expanded={mobileMenuOpen}
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
-                <div className="elementor-widget-container">
-                  <Link href="/">
-                    <img
-                      fetchPriority="high"
-                      decoding="async"
-                      width={800}
-                      height={498}
-                      src="/wp-content/uploads/2026/07/cropped-Kirima-Rise-Logo-01-scaled-1-1024x637.png"
-                      className="attachment-large size-large wp-image-90"
-                      alt="Kirima Rise Logo"
-                      sizes="(max-width: 800px) 100vw, 800px"
-                      style={{ maxHeight: '68px', width: 'auto', objectFit: 'contain' }}
-                    />
-                  </Link>
-                </div>
-              </div>
+                <span className="kr-hamburger-bar" />
+                <span className="kr-hamburger-bar" />
+                <span className="kr-hamburger-bar" />
+              </button>
             </div>
           </div>
 
-          {/* Right: Enquire Button */}
-          <div
-            className="elementor-element elementor-element-609ad2b6 e-con-full e-flex e-con e-child"
-            data-id="609ad2b6"
-            data-element_type="container"
-            data-e-type="container"
-          >
-            <div
-              className="elementor-element elementor-element-778b8d3 elementor-align-right animated-slow elementor-mobile-align-justify elementor-widget-mobile__width-initial elementor-widget elementor-widget-button"
-              data-id="778b8d3"
-              data-element_type="widget"
-              data-e-type="widget"
-              data-settings='{"_animation":"none"}'
-              data-widget_type="button.default"
-            >
-              <div className="elementor-widget-container">
-                <div className="elementor-button-wrapper">
+          {/* Mobile Drawer Menu */}
+          <div className="kr-mobile-drawer" id="kr-mobile-drawer">
+            <ul className="kr-mobile-nav-list">
+              <li>
+                <Link
+                  href="/"
+                  className="kr-mobile-nav-link kr-active"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {tNav('home').toUpperCase()}
+                </Link>
+              </li>
+              <li
+                className={`kr-mobile-has-sub ${
+                  mobileAboutSubOpen ? 'kr-sub-expanded' : ''
+                }`}
+              >
+                <div className="kr-mobile-sub-toggle">
                   <Link
-                    className="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
-                    href="/contact"
+                    href="/about-us"
+                    className="kr-mobile-nav-link"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
-                    <span className="elementor-button-content-wrapper">
-                      <span className="elementor-button-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          id="Layer_1"
-                          viewBox="0 0 88.4 89.1"
-                          style={{ width: '14px', height: '14px' }}
-                        >
-                          <polygon
-                            fill="#FFFFFF"
-                            points="81.3 77.5 72.3 77.5 72.3 15.4 10.1 15.4 10.1 6.4 81.3 6.4 81.3 77.5"
-                          />
-                          <rect
-                            fill="#FFFFFF"
-                            x="-3.7"
-                            y="39.7"
-                            width="94.3"
-                            height="9"
-                            transform="translate(-18.5 43.7) rotate(-45)"
-                          />
-                        </svg>
-                      </span>
-                      <span className="elementor-button-text">{tNav('enquire')}</span>
-                    </span>
+                    {tNav('about').toUpperCase()}
                   </Link>
+                  <button
+                    type="button"
+                    className="kr-mobile-sub-btn"
+                    aria-label="Toggle About submenu"
+                    onClick={() => setMobileAboutSubOpen(!mobileAboutSubOpen)}
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
                 </div>
-              </div>
+                <ul className="kr-mobile-sub-list">
+                  <li>
+                    <Link
+                      href="/about-us"
+                      className="kr-mobile-sub-link"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {tNav('ourStory')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/our-heritage"
+                      className="kr-mobile-sub-link"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {tNav('ourHeritage')}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  href="/plots"
+                  className="kr-mobile-nav-link"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {tNav('plots').toUpperCase()}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="kr-mobile-nav-link"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {tNav('contact').toUpperCase()}
+                </Link>
+              </li>
+            </ul>
+
+            {/* Mobile Language Switcher */}
+            <div
+              style={{
+                padding: '16px 0 12px 0',
+                borderBottom: '1px solid rgba(0, 73, 30, 0.08)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: 'var(--kr-font-sans)',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: '#555555',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Language / Lugha:
+              </span>
+              <LanguageSwitcher isMobile={true} />
+            </div>
+
+            <div className="kr-mobile-drawer-cta">
+              <Link
+                href="/contact"
+                className="kr-btn-enquire kr-btn-enquire-mobile"
+                onClick={() => setMobileMenuOpen(false)}
+                style={{
+                  width: '100%',
+                  justifyContent: 'center',
+                  marginTop: '12px',
+                  padding: '12px 24px',
+                }}
+              >
+                <span>{tNav('enquire').toUpperCase()}</span>
+                <svg
+                  className="kr-btn-arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </Link>
             </div>
           </div>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      {/* 3. 1st Batch Released Plots Notice Banner / Interactive Directory Notice */}
-      <div
-        className="kr-home-banner-wrapper"
-        style={{
-          width: '100%',
-          background: '#FFFFFF',
-          borderBottom: '2px solid #E5E7EB',
-          boxShadow: '0 4px 20px -2px rgba(151,11,16,0.06)',
-          position: 'relative',
-          zIndex: 9,
-        }}
-      >
+      {/* ======================================================== */}
+      {/* 1ST BATCH RELEASED PLOTS NOTICE BANNER / HOMEPAGE CTA    */}
+      {/* ======================================================== */}
+      <div className="kr-home-banner-wrapper">
         <div className="kr-home-notice-bar">
           <div className="kr-notice-left">
             <span className="kr-notice-tag">{t('noticeTag')}</span>
             <div className="kr-notice-content">
-              <strong>{t('noticeTitle')}</strong> — {t('noticeBody')}
+              <strong>{t('noticeTitle')}</strong> &mdash; {t('noticeBody')}
             </div>
           </div>
           <div className="kr-notice-actions">
             <Link href="/plots" className="kr-notice-btn-search">
-              <svg viewBox="0 0 24 24" style={{ width: '15px', height: '15px', fill: '#FFFFFF' }}>
+              <svg viewBox="0 0 24 24">
                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z" />
               </svg>
               <span>{t('viewPlotsBtn')}</span>
@@ -376,6 +304,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }

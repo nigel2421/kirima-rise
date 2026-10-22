@@ -66,6 +66,13 @@ export default async function LocaleLayout({
     <html lang={locale === 'sw' ? 'sw' : 'en-US'} className="no-js">
       <head>
         {/* Core Original Stylesheets for 100% UI Preservation */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/brand-design.css" />
         <link
           rel="stylesheet"
           id="hfe-widgets-style-css"
@@ -96,10 +103,10 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{
             __html: `
               .elementor-kit-7 {
-                --e-global-color-primary: #E10600;
+                --e-global-color-primary: #B01F24;
                 --e-global-color-secondary: #00491E;
-                --e-global-color-text: #333333;
-                --e-global-color-accent: #61CE70;
+                --e-global-color-text: #1A1A1A;
+                --e-global-color-accent: #00491E;
                 --e-global-typography-primary-font-family: "Plus Jakarta Sans";
                 --e-global-typography-primary-font-size: 96px;
                 --e-global-typography-primary-font-weight: 700;
@@ -129,7 +136,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className="page-template page-template-elementor_header_footer elementor-default elementor-template-full-width elementor-kit-7">
+      <body className="home wp-singular page-template page-template-elementor_header_footer elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-36">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="site-wrapper" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header />
