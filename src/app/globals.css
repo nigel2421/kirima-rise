@@ -194,3 +194,304 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ========================================================
+   Kirima Rise - News & Updates Section Styles
+   ======================================================== */
+.kr-news-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.kr-news-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  gap: 24px !important;
+  margin-bottom: 32px !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+.kr-news-header-left {
+  flex: 1 1 520px;
+  max-width: 680px;
+  height: auto !important;
+  min-height: 0 !important;
+}
+.kr-news-eyebrow {
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #E10600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.kr-news-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.15;
+  margin: 0 0 12px 0;
+}
+.kr-news-subtitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+  max-width: 620px;
+}
+.kr-news-header-right {
+  flex-shrink: 0;
+}
+.kr-yt-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 22px;
+  background: #FFFFFF;
+  color: #E10600 !important;
+  border: 1.5px solid #E10600;
+  border-radius: 999px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(225, 6, 0, 0.12);
+}
+.kr-yt-follow-btn:hover {
+  background: #E10600;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(225, 6, 0, 0.28);
+}
+.kr-news-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  overflow: hidden;
+}
+.kr-news-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.kr-news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+}
+.kr-news-card {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.kr-news-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(151, 11, 16, 0.3);
+  box-shadow: 0 20px 45px rgba(151, 11, 16, 0.12);
+}
+.kr-news-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(151, 11, 16, 0.92);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  z-index: 2;
+}
+.kr-news-media-pill {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  z-index: 2;
+}
+.kr-news-media-pill svg {
+  fill: #E10600;
+}
+.kr-news-body {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  flex-grow: 1;
+}
+.kr-news-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888888;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.kr-news-category {
+  color: #E10600;
+  font-weight: 700;
+}
+.kr-news-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 12px 0;
+}
+.kr-news-heading a {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.kr-news-heading a:hover,
+.kr-news-card:hover .kr-news-heading a {
+  color: #E10600;
+}
+.kr-news-desc {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+.kr-news-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+.kr-news-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #E10600;
+  color: #FFFFFF !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(151, 11, 16, 0.2);
+}
+.kr-news-action-btn span {
+  color: #FFFFFF !important;
+}
+.kr-news-action-btn svg {
+  stroke: #FFFFFF !important;
+}
+.kr-news-action-btn:hover {
+  background: #7A090D;
+  color: #E6CE94 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(151, 11, 16, 0.35);
+}
+@media (max-width: 991px) {
+  .kr-news-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-header-left {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-header-right {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-title {
+    font-size: 34px;
+  }
+  .kr-news-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .kr-news-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    margin-bottom: 20px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-header-left {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-header-right {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .kr-news-title {
+    font-size: 28px;
+  }
+  .kr-news-subtitle {
+    font-size: 14px;
+  }
+  .kr-news-body {
+    padding: 18px;
+  }
+  .kr-news-heading {
+    font-size: 18px;
+  }
+}
+
+
