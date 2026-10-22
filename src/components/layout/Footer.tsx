@@ -104,9 +104,6 @@ export default function Footer() {
                 <Link href="/our-heritage">{tNav('ourHeritage')}</Link>
               </li>
               <li>
-                <Link href="/plots">{tNav('plots')}</Link>
-              </li>
-              <li>
                 <Link href="/contact">{tNav('contact')}</Link>
               </li>
             </ul>

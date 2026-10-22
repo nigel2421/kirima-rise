@@ -8,9 +8,10 @@
 
 ## 1. Executive Summary & Brand Essence
 
-**Kirima Rise** represents heritage, trust, generational stability, and premier property regularisation and development under the Estate of G.K. Kirima. 
+**Kirima Rise** represents heritage, trust, generational stability, and premier property regularisation and development under the Estate of G.K. Kirima.
 
 The visual identity combines timeless classical prestige with crisp modern authority:
+
 - **Core Descriptor:** *"Kirima Rise is an entity of the Estate of G.K. Kirima"*
 - **Visual Character:** Sophisticated, authoritative, transparent, enduring.
 - **Key Visual Elements:** Lion emblem intertwined with stylized 'R', dignified serif typography, high-contrast regal red, and deep evergreen accents.
@@ -24,14 +25,14 @@ The brand palette is strictly governed by the approved Pantone standards. Digita
 ### 2.1 Primary Brand Colors
 
 | Swatch | Color Name | Pantone | Hex | RGB | CMYK | Role / Usage |
-|---|---|---|---|---|---|---|
-| ![#E10600](https://via.placeholder.com/20/E10600/000000?text=+) | **Kirima Red** | **Pantone 2357 C** | `#E10600` | `rgb(255, 6, 0)` | `0, 97, 100, 12` | Primary brand identifier, primary call-to-action buttons, hero badges, main headings, top alert banners, email headers. |
+| --- | --- | --- | --- | --- | --- | --- |
+| ![#bo1f24](https://via.placeholder.com/20/bo1f24/000000?text=+) | **Kirima Red** | **Pantone 2357 C** | `#bo1f24` | `rgb(255, 6, 0)` | `0, 97, 100, 12` | Primary brand identifier, primary call-to-action buttons, hero badges, main headings, top alert banners, email headers. |
 | ![#00491E](https://via.placeholder.com/20/00491E/000000?text=+) | **Heritage Forest Green** | **Pantone 3537 C** | `#00491E` | `rgb(0, 73, 39)` | `100, 0, 59, 71` | Secondary brand anchor, verification checks, secondary CTAs, trust badges, borders, button outlines, WhatsApp / direct contact highlights. |
 
 ### 2.2 Neutral & Supporting Palette
 
 | Swatch | Color Name | Hex | RGB | Role / Usage |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/000000?text=+) | **Pure White** | `#FFFFFF` | `rgb(255, 255, 255)` | Card backgrounds, pure contrast negative spaces, reversed text on red/green surfaces. |
 | ![#FAF7F2](https://via.placeholder.com/20/FAF7F2/000000?text=+) | **Warm Sand / Cream** | `#FAF7F2` | `rgb(250, 247, 242)` | Elevated surface fills, stationery parchment backgrounds, quotation cards, gentle section separators. |
 | ![#1A1A1A](https://via.placeholder.com/20/1A1A1A/000000?text=+) | **Charcoal Black** | `#1A1A1A` | `rgb(26, 26, 26)` | High-readability body copy, dark subheadings, monochrome logos. |
@@ -40,9 +41,10 @@ The brand palette is strictly governed by the approved Pantone standards. Digita
 | ![#F3F4F6](https://via.placeholder.com/20/F3F4F6/000000?text=+) | **Surface Tint** | `#F3F4F6` | `rgb(243, 244, 246)` | Subtle table striping, input inactive backgrounds, light UI panels. |
 
 ### 2.3 Color Usage Rules
-- **Never substitute** Kirima Red (`#E10600`) with generic crimson, brick red (`#B01F24` or `#970B10`), or orange.
+
+- **Never substitute** Kirima Red (`#bo1f24`) with generic crimson, brick red (`#B01F24` or `#970B10`), or orange.
 - **Never substitute** Heritage Green (`#00491E`) with bright neon green or olive.
-- **Contrast Compliance:** When placing text over Kirima Red (`#E10600`), use **Pure White (`#FFFFFF`)**. When placing text over Heritage Forest Green (`#00491E`), use **Pure White (`#FFFFFF`)**.
+- **Contrast Compliance:** When placing text over Kirima Red (`#bo1f24`), use **Pure White (`#FFFFFF`)**. When placing text over Heritage Forest Green (`#00491E`), use **Pure White (`#FFFFFF`)**.
 
 ---
 
@@ -51,13 +53,17 @@ The brand palette is strictly governed by the approved Pantone standards. Digita
 The official primary typeface for Kirima Rise across all print and digital mediums is **EB Garamond**.
 
 ### 3.1 Primary Font: EB Garamond
+
 - **Google Fonts Import:**
+
   ```html
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   ```
+
 - **CSS Font Family Declaration:**
+
   ```css
   font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
   ```
@@ -65,21 +71,24 @@ The official primary typeface for Kirima Rise across all print and digital mediu
 ### 3.2 Typography Hierarchy & Specs
 
 | Hierarchy | Weight | Desktop Size | Mobile Size | Line Height | Letter Spacing | Case | Role |
-|---|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | **H1 Display** | Bold (700) | 56px – 72px | 36px – 44px | 1.15 | -0.01em | Title / Sentence | Main hero headers, page titles |
 | **H2 Section** | Bold (700) | 36px – 44px | 28px – 32px | 1.25 | normal | Title Case | Major section headers |
-| **H3 Subsection**| SemiBold (600) | 26px – 30px | 22px – 24px | 1.3 | normal | Title Case | Feature cards, parcel headers |
+| **H3 Subsection** | SemiBold (600) | 26px – 30px | 22px – 24px | 1.3 | normal | Title Case | Feature cards, parcel headers |
 | **H4 Title** | SemiBold (600) | 20px – 22px | 18px – 20px | 1.35 | normal | Title Case | Modal titles, form group titles |
-| **Lead / Subtitle**| Regular / Italic (400) | 20px – 22px | 17px – 18px | 1.5 | normal | Normal | Hero supporting text |
+| **Lead / Subtitle** | Regular / Italic (400) | 20px – 22px | 17px – 18px | 1.5 | normal | Normal | Hero supporting text |
 | **Body Text** | Regular (400) | 17px – 18px | 16px | 1.65 | normal | Normal | Standard article and narrative text |
 | **Buttons / CTAs** | SemiBold (600) / Bold (700) | 15px – 16px | 14px – 15px | 1.0 | 0.05em | Uppercase | Buttons, menu items, action badges |
 | **Caption / Meta** | Medium (500) | 13px – 14px | 12px – 13px | 1.4 | 0.02em | Normal | Dates, footer notes, image captions |
 
 ### 3.3 Supporting Sans-Serif (Functional Data Only)
+
 Where numerical tables, micro badge indicators, or dense system data strictly require a sans-serif neutral for compact readability, use the clean modern sans stack:
+
 ```css
 font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 ```
+
 *Note: All branding, titles, navigation links, and narrative paragraphs must remain in **EB Garamond**.*
 
 ---
@@ -87,7 +96,9 @@ font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 ## 4. Logo Anatomy & Usage Rules
 
 ### 4.1 Anatomy
+
 The official logo consists of:
+
 1. **The Emblem / Icon:** A stylized, regal lion facing left intertwined with the calligraphic letter **'R'**.
 2. **The Brand Rule:** A sharp horizontal separation line tapering outward.
 3. **The Logotype:**
@@ -96,9 +107,10 @@ The official logo consists of:
 4. **Descriptor (Optional):** Centered beneath RISE (e.g., *"ESTATE OF G.K. KIRIMA"* or specific project division).
 
 ### 4.2 Approved Logo Variations
+
 1. **Full Colour (Primary):**
-   - Icon: Red (`#E10600`) and Forest Green (`#00491E`).
-   - Logotype "KIRIMA": Red (`#E10600`).
+   - Icon: Red (`#bo1f24`) and Forest Green (`#00491E`).
+   - Logotype "KIRIMA": Red (`#bo1f24`).
    - Rule & "RISE": Forest Green (`#00491E`).
    - Use on: White and light cream backgrounds.
 2. **Monochrome White (Reversed):**
@@ -109,10 +121,12 @@ The official logo consists of:
    - Use on: Black & white print, official legal filings, grayscale documents.
 
 ### 4.3 Clear Space & Protection Zone
+
 - The minimum clear space surrounding the logo is proportional to the height of the letter **'K'** in "KIRIMA".
 - No text, icons, graphics, or borders may encroach into this protective perimeter.
 
 ### 4.4 Logo Don'ts
+
 - ❌ Do NOT alter the colors of the icon or logotype.
 - ❌ Do NOT stretch, squish, or distort the aspect ratio.
 - ❌ Do NOT place the full-color logo over busy, low-contrast photographic backgrounds.
@@ -124,12 +138,13 @@ The official logo consists of:
 ## 5. Web Design System & CSS Implementation
 
 ### 5.1 Global CSS Variables
+
 All websites and web applications must incorporate this core stylesheet foundation:
 
 ```css
 :root {
   /* Brand Colors */
-  --kr-color-red: #E10600;          /* Pantone 2357 C */
+  --kr-color-red: #bo1f24;          /* Pantone 2357 C */
   --kr-color-green: #00491E;        /* Pantone 3537 C */
   --kr-color-white: #FFFFFF;
   --kr-color-cream: #FAF7F2;
@@ -164,7 +179,9 @@ All websites and web applications must incorporate this core stylesheet foundati
 ### 5.2 UI Components
 
 #### Buttons
+
 - **Primary CTA Button:**
+
   ```css
   .kr-btn-primary {
     background-color: var(--kr-color-red);
@@ -187,6 +204,7 @@ All websites and web applications must incorporate this core stylesheet foundati
   ```
 
 - **Secondary Trust Button (Green):**
+
   ```css
   .kr-btn-secondary {
     background-color: var(--kr-color-green);
@@ -208,6 +226,7 @@ All websites and web applications must incorporate this core stylesheet foundati
   ```
 
 - **Outlined Button:**
+
   ```css
   .kr-btn-outline {
     background-color: transparent;
@@ -227,7 +246,8 @@ All websites and web applications must incorporate this core stylesheet foundati
   ```
 
 #### Form Controls
-- Focus outline must always use **Heritage Forest Green (`#00491E`)** or **Kirima Red (`#E10600`)**.
+
+- Focus outline must always use **Heritage Forest Green (`#00491E`)** or **Kirima Red (`#bo1f24`)**.
 - Input fields should feature crisp 1px borders in `#D1D5DB`, with 4px border-radius and 16px font-size to prevent mobile browser zoom.
 
 ---
@@ -237,16 +257,17 @@ All websites and web applications must incorporate this core stylesheet foundati
 All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must follow these strict brand standards:
 
 ### 6.1 Layout & Visual Container
+
 - **Max Width:** `600px` to `620px` centered table layout.
 - **Background:** Neutral off-white `#F7F7F7` outer canvas with pure white `#FFFFFF` content card.
 - **Header Banner:**
-  - Background: Kirima Red (`#E10600`).
+  - Background: Kirima Red (`#bo1f24`).
   - Accent Trim: 3px solid Heritage Forest Green (`#00491E`).
   - Typography: Pure White `#FFFFFF`, `'EB Garamond', Georgia, serif`.
   - Content: Official brand logo or crisp title with descriptor.
 - **Message Callout / Summary:**
   - Background: Light cream `#FAF7F2` or subtle tint `#FCF8F8`.
-  - Border: 4px solid Kirima Red (`#E10600`).
+  - Border: 4px solid Kirima Red (`#bo1f24`).
 - **Confirmation / Action Alerts:**
   - Border: 1px solid `#00491E`.
   - Icon / Check: Heritage Forest Green (`#00491E`).
@@ -259,6 +280,7 @@ All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must fo
 ## 7. Official Company Metadata & Stationery Standards
 
 ### 7.1 Contact & Entity Details
+
 - **Company Name:** Kirima Rise
 - **Parent Legal Entity:** Estate of G.K. Kirima
 - **Mandatory Entity Line:** *"Kirima Rise is an entity of the Estate of G.K. Kirima"*
@@ -272,6 +294,7 @@ All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must fo
 - **Official Website:** `https://kirimarise.co.ke`
 
 ### 7.2 Physical Dimensions
+
 - **Letterhead:** A4 standard (210mm wide × 297mm high)
 - **Business Cards:** 90mm wide × 50mm high
 - **ID Cards:** 85mm high × 54mm wide
@@ -282,7 +305,7 @@ All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must fo
 
 1. **Vehicle Livery:**
    - **Option 1 (White Vehicle):** Clean white exterior, full-color Kirima Rise logo on side doors, lion watermark in subtle red tint across rear panel, contact details in Heritage Forest Green.
-   - **Option 2 (Red Vehicle):** Pure Kirima Red (`#E10600`) vehicle wrap, solid white reverse logo on front doors, deep maroon lion motif watermark on rear panels.
+   - **Option 2 (Red Vehicle):** Pure Kirima Red (`#bo1f24`) vehicle wrap, solid white reverse logo on front doors, deep maroon lion motif watermark on rear panels.
    - **Delivery Scooters:** White body with rear delivery box branded in full color.
 2. **Signage (Streets & Courts):**
    - Estate street and court signage formatted with dark forest green or charcoal framing, clean white or brushed steel plaques, with the official Kirima Rise emblem and court designation set in bold EB Garamond.

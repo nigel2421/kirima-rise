@@ -2,7 +2,7 @@
  * KIRIMA RISE — Master Brand Design Stylesheet
  * Version: 2.0 (Aligned with Official Brand Guidelines 2.09.26)
  * Entity: Kirima Rise is an entity of the Estate of G.K. Kirima
- * Primary Red: Pantone 2357 C (#E10600)
+ * Primary Red: Pantone 2357 C (#bo1f24)
  * Primary Green: Pantone 3537 C (#00491E)
  * Primary Typeface: EB Garamond
  */
@@ -11,8 +11,10 @@
 
 :root {
     /* Brand Design Tokens */
-    --kr-red: #B01F24;              /* Live Kirima Red */
-    --kr-green: #00491E;            /* Pantone 3537 C */
+    --kr-red: #B01F24;
+    /* Live Kirima Red */
+    --kr-green: #00491E;
+    /* Pantone 3537 C */
     --kr-green-hover: #003616;
     --kr-red-hover: #970B10;
     --kr-white: #FFFFFF;
@@ -50,7 +52,8 @@
 /* ========================================================
    1. GLOBAL MOBILE VIEWPORT CONSTRAINTS & OVERFLOW PREVENTION
    ======================================================== */
-html, body {
+html,
+body {
     max-width: 100% !important;
     overflow-x: clip !important;
     margin: 0 !important;
@@ -58,23 +61,28 @@ html, body {
     box-sizing: border-box !important;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit !important;
 }
 
 /* ========================================================
    2. PREVENT IMAGES, SVGS & MEDIA FROM BREAKING CONTAINER
    ======================================================== */
-img, svg, video, canvas {
+img,
+svg,
+video,
+canvas {
     max-width: 100% !important;
     height: auto !important;
 }
 
 /* Ensure background illustrations or decorative maps don't overflow */
-.background-map, 
-.cadastral-pattern, 
-.watermark, 
-[class*="bg-map"], 
+.background-map,
+.cadastral-pattern,
+.watermark,
+[class*="bg-map"],
 [class*="pattern"],
 .elementor-background-overlay {
     max-width: 100% !important;
@@ -94,7 +102,7 @@ img, svg, video, canvas {
     display: none !important;
 }
 
-.e-con-boxed:not([data-id="3d9331fe"]):not(.elementor-element-3d9331fe), 
+.e-con-boxed:not([data-id="3d9331fe"]):not(.elementor-element-3d9331fe),
 .e-con-full:not([data-id="3d9331fe"]):not(.elementor-element-3d9331fe) {
     overflow-x: hidden !important;
     box-sizing: border-box !important;
@@ -138,7 +146,7 @@ img, svg, video, canvas {
     width: max-content !important;
     background: #FFFFFF !important;
     border: 1px solid #E5E7EB !important;
-    border-top: 3px solid #E10600 !important;
+    border-top: 3px solid #bo1f24 !important;
     border-radius: 0 0 8px 8px !important;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16) !important;
     padding: 8px 0 !important;
@@ -151,12 +159,12 @@ img, svg, video, canvas {
 }
 
 /* Reveal submenu on hover and keyboard focus */
-.hfe-nav-menu li.menu-item-has-children:hover > ul.sub-menu,
-.hfe-nav-menu li.menu-item-has-children:focus-within > ul.sub-menu,
-.elementor-widget-navigation-menu li.menu-item-has-children:hover > ul.sub-menu,
-.elementor-widget-navigation-menu li.menu-item-has-children:focus-within > ul.sub-menu,
-.elementor-element-389ef415 li.menu-item-has-children:hover > ul.sub-menu,
-.elementor-element-389ef415 li.menu-item-has-children:focus-within > ul.sub-menu {
+.hfe-nav-menu li.menu-item-has-children:hover>ul.sub-menu,
+.hfe-nav-menu li.menu-item-has-children:focus-within>ul.sub-menu,
+.elementor-widget-navigation-menu li.menu-item-has-children:hover>ul.sub-menu,
+.elementor-widget-navigation-menu li.menu-item-has-children:focus-within>ul.sub-menu,
+.elementor-element-389ef415 li.menu-item-has-children:hover>ul.sub-menu,
+.elementor-element-389ef415 li.menu-item-has-children:focus-within>ul.sub-menu {
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
@@ -195,7 +203,7 @@ img, svg, video, canvas {
 
 .hfe-nav-menu ul.sub-menu li a:hover,
 .elementor-element-389ef415 ul.sub-menu li a:hover {
-    color: #E10600 !important;
+    color: #bo1f24 !important;
     background-color: #FEF2F2 !important;
     padding-left: 26px !important;
 }
@@ -206,8 +214,8 @@ img, svg, video, canvas {
     padding-right: 0 !important;
 }
 
-.e-con.e-parent.e-con-boxed > .e-con-inner,
-.elementor-section.elementor-section-boxed > .elementor-container {
+.e-con.e-parent.e-con-boxed>.e-con-inner,
+.elementor-section.elementor-section-boxed>.elementor-container {
     max-width: 1240px !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -241,7 +249,7 @@ img, svg, video, canvas {
 }
 
 @media (min-width: 900px) {
-    .elementor-element-61ece2e4 > .e-con-inner {
+    .elementor-element-61ece2e4>.e-con-inner {
         display: grid !important;
         grid-template-columns: 1.15fr 0.85fr !important;
         grid-template-areas:
@@ -307,7 +315,7 @@ img, svg, video, canvas {
     }
 
     .elementor-element-dc84c68,
-    .elementor-element-dc84c68 > .elementor-widget-container {
+    .elementor-element-dc84c68>.elementor-widget-container {
         grid-area: hero-photo !important;
         margin: 0 !important;
         padding: 0 !important;
@@ -327,7 +335,7 @@ img, svg, video, canvas {
 }
 
 @media (max-width: 899px) {
-    .elementor-element-61ece2e4 > .e-con-inner {
+    .elementor-element-61ece2e4>.e-con-inner {
         display: flex !important;
         flex-direction: column !important;
         gap: 16px !important;
@@ -350,7 +358,7 @@ img, svg, video, canvas {
     }
 
     .elementor-element-dc84c68,
-    .elementor-element-dc84c68 > .elementor-widget-container {
+    .elementor-element-dc84c68>.elementor-widget-container {
         margin: 20px 0 0 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -377,7 +385,7 @@ img, svg, video, canvas {
     box-sizing: border-box !important;
 }
 
-.elementor-element-5c38dfac > .e-con-inner {
+.elementor-element-5c38dfac>.e-con-inner {
     max-width: 1240px !important;
     margin: 0 auto !important;
     box-sizing: border-box !important;
@@ -402,10 +410,11 @@ img, svg, video, canvas {
    4. BUTTON & NOTICE ACTION WRAPPING (MOBILE FIX)
    ======================================================== */
 @media (max-width: 768px) {
+
     /* Notice and Call-To-Action button containers */
-    .notice-actions, 
-    .btn-group, 
-    .public-notice .d-flex, 
+    .notice-actions,
+    .btn-group,
+    .public-notice .d-flex,
     .hero-actions {
         display: flex !important;
         flex-direction: column !important;
@@ -413,9 +422,9 @@ img, svg, video, canvas {
         gap: 10px !important;
     }
 
-    .notice-actions a, 
-    .btn-group a, 
-    .public-notice a.btn, 
+    .notice-actions a,
+    .btn-group a,
+    .public-notice a.btn,
     .hero-actions a {
         width: 100% !important;
         max-width: 100% !important;
@@ -426,9 +435,9 @@ img, svg, video, canvas {
     }
 
     /* Prevent general sections and footers from overflowing horizontally */
-    .container, 
-    .container-fluid, 
-    section, 
+    .container,
+    .container-fluid,
+    section,
     footer,
     .elementor-section:not([data-id="3d9331fe"]):not(.elementor-element-3d9331fe),
     .e-con:not([data-id="3d9331fe"]):not(.elementor-element-3d9331fe):not(.elementor-element-2e6560ab):not(.elementor-element-1a7374ab):not(.elementor-element-389ef415) {
@@ -441,8 +450,8 @@ img, svg, video, canvas {
 /* -------------------------------------------------------------
    Typography Enforcement
    ------------------------------------------------------------- */
-body, 
-p, 
+body,
+p,
 .elementor-widget-text-editor,
 .elementor-icon-box-description,
 .elementor-icon-list-item,
@@ -451,7 +460,12 @@ p,
     color: var(--kr-dark);
 }
 
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .elementor-heading-title,
 .elementor-icon-box-title,
 .elementor-icon-box-title a,
@@ -853,6 +867,7 @@ textarea:focus {
         flex-direction: column !important;
         gap: 32px !important;
     }
+
     .kr-footer-col-contact,
     .kr-footer-col-nav {
         border-left: none !important;
@@ -862,6 +877,7 @@ textarea:focus {
         max-width: 100% !important;
         width: 100% !important;
     }
+
     .kr-footer-col-brand {
         text-align: center !important;
         display: flex !important;
@@ -870,17 +886,21 @@ textarea:focus {
         max-width: 100% !important;
         width: 100% !important;
     }
+
     .kr-footer-logo-link {
         display: flex !important;
         justify-content: center !important;
     }
+
     .kr-footer-brand-logo {
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
     .kr-footer-entity-text {
         text-align: center !important;
     }
+
     .kr-footer-bottom {
         flex-direction: column !important;
         align-items: flex-start !important;
@@ -1056,7 +1076,7 @@ textarea:focus {
     border: 1px solid rgba(0, 73, 30, 0.12) !important;
     border-top: 3px solid var(--kr-red) !important;
     border-radius: 0 0 8px 8px !important;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0,0,0,0.04) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04) !important;
     padding: 8px 0 !important;
     margin: 0 !important;
     list-style: none !important;
@@ -1080,8 +1100,8 @@ textarea:focus {
     background: transparent !important;
 }
 
-.kr-has-dropdown:hover > .kr-dropdown-menu,
-.kr-has-dropdown:focus-within > .kr-dropdown-menu {
+.kr-has-dropdown:hover>.kr-dropdown-menu,
+.kr-has-dropdown:focus-within>.kr-dropdown-menu {
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: auto !important;
@@ -1215,7 +1235,7 @@ textarea:focus {
     .kr-nav-left {
         display: none !important;
     }
-    
+
     .kr-btn-enquire:not(.kr-btn-enquire-mobile) {
         display: none !important;
     }
@@ -1621,7 +1641,7 @@ textarea:focus {
     pointer-events: none !important;
 }
 
-.elementor-element-5c38dfac > .e-con-inner {
+.elementor-element-5c38dfac>.e-con-inner {
     position: relative !important;
     z-index: 1 !important;
     max-width: 1200px !important;
@@ -1735,10 +1755,12 @@ textarea:focus {
         width: 100% !important;
         max-width: 100% !important;
     }
+
     .elementor-element-1ce6695d {
         width: 100% !important;
         max-width: 100% !important;
     }
+
     .elementor-element-e1ead62 {
         justify-content: flex-start !important;
     }
@@ -1806,7 +1828,7 @@ textarea:focus {
     font-weight: 700 !important;
 }
 
-blockquote, 
+blockquote,
 .kr-editorial-quote,
 .elementor-element-c79b2e8 p {
     font-family: var(--kr-font-serif) !important;
@@ -1891,7 +1913,7 @@ blockquote,
    GLOBAL HEADINGS & TYPOGRAPHY THEME (Live Site Aligned)
    Reference: https://kirima.great-site.net/?i=3
    "Kirima Rise. Empowering Tomorrow." in Plus Jakarta Sans
-   Primary Color: #B01F24 / #E10600, Text Transform: Capitalize
+   Primary Color: #B01F24 / #bo1f24, Text Transform: Capitalize
    ======================================================== */
 .elementor-kit-7 {
     --e-global-typography-primary-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
@@ -2096,4 +2118,3 @@ a.elementor-button[href="#next"]:focus .elementor-button-icon svg path,
     fill: #00491E !important;
     transform: translateY(2px) !important;
 }
-

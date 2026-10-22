@@ -11,7 +11,7 @@ interface EnquiryFormProps {
 }
 
 export default function EnquiryForm({ initialSubject = '', parcelNo, block }: EnquiryFormProps) {
-  const t = useTranslations('contact.form');
+  const t = useTranslations('contact');
   const locale = useLocale();
 
   const [formData, setFormData] = useState({
@@ -172,7 +172,7 @@ export default function EnquiryForm({ initialSubject = '', parcelNo, block }: En
               disabled={submitting}
               style={{
                 flex: '1 1 200px',
-                background: '#E10600',
+                background: '#bo1f24',
                 color: '#FFFFFF',
                 border: 'none',
                 padding: '14px 22px',

@@ -2,14 +2,19 @@
 
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const t = useTranslations('header');
   const tNav = useTranslations('nav');
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileAboutSubOpen, setMobileAboutSubOpen] = useState(false);
+
+  const isHome = pathname === '/';
+  const isAbout = pathname === '/about-us' || pathname === '/our-heritage';
+  const isContact = pathname === '/contact';
 
   return (
     <>
@@ -45,14 +50,14 @@ export default function Header() {
             <div className="kr-nav-left">
               <ul className="kr-nav-list">
                 <li className="kr-nav-item">
-                  <Link href="/" className="kr-nav-link kr-active">
+                  <Link href="/" className={`kr-nav-link ${isHome ? 'kr-active' : ''}`}>
                     {tNav('home').toUpperCase()}
                   </Link>
                 </li>
                 <li className="kr-nav-item kr-has-dropdown">
                   <a
                     href="#"
-                    className="kr-nav-link kr-dropdown-toggle"
+                    className={`kr-nav-link kr-dropdown-toggle ${isAbout ? 'kr-active' : ''}`}
                     aria-haspopup="true"
                     aria-expanded="false"
                     onClick={(e) => e.preventDefault()}
@@ -83,12 +88,7 @@ export default function Header() {
                   </ul>
                 </li>
                 <li className="kr-nav-item">
-                  <Link href="/plots" className="kr-nav-link">
-                    {tNav('plots').toUpperCase()}
-                  </Link>
-                </li>
-                <li className="kr-nav-item">
-                  <Link href="/contact" className="kr-nav-link">
+                  <Link href="/contact" className={`kr-nav-link ${isContact ? 'kr-active' : ''}`}>
                     {tNav('contact').toUpperCase()}
                   </Link>
                 </li>
@@ -149,7 +149,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className="kr-mobile-nav-link kr-active"
+                  className={`kr-mobile-nav-link ${isHome ? 'kr-active' : ''}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {tNav('home').toUpperCase()}
@@ -163,7 +163,7 @@ export default function Header() {
                 <div className="kr-mobile-sub-toggle">
                   <Link
                     href="/about-us"
-                    className="kr-mobile-nav-link"
+                    className={`kr-mobile-nav-link ${isAbout ? 'kr-active' : ''}`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {tNav('about').toUpperCase()}
@@ -207,17 +207,8 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/plots"
-                  className="kr-mobile-nav-link"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {tNav('plots').toUpperCase()}
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/contact"
-                  className="kr-mobile-nav-link"
+                  className={`kr-mobile-nav-link ${isContact ? 'kr-active' : ''}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {tNav('contact').toUpperCase()}
@@ -282,28 +273,37 @@ export default function Header() {
 
       {/* ======================================================== */}
       {/* 1ST BATCH RELEASED PLOTS NOTICE BANNER / HOMEPAGE CTA    */}
+      {/* Rendered ONLY on homepage to strictly match original site */}
       {/* ======================================================== */}
-      <div className="kr-home-banner-wrapper">
-        <div className="kr-home-notice-bar">
-          <div className="kr-notice-left">
-            <span className="kr-notice-tag">{t('noticeTag')}</span>
-            <div className="kr-notice-content">
-              <strong>{t('noticeTitle')}</strong> &mdash; {t('noticeBody')}
+      {isHome && (
+        <div className="kr-home-banner-wrapper">
+          <div className="kr-home-notice-bar">
+            <div className="kr-notice-left">
+              <span className="kr-notice-tag">{t('noticeTag')}</span>
+              <div className="kr-notice-content">
+                <strong>{t('noticeTitle')}</strong> &mdash; {t('noticeBody')}
+              </div>
+            </div>
+            <div className="kr-notice-actions">
+              <Link
+                href={{ pathname: '/contact', hash: 'plots-batch-section' }}
+                className="kr-notice-btn-search"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z" />
+                </svg>
+                <span>{t('viewPlotsBtn')}</span>
+              </Link>
+              <Link
+                href={{ pathname: '/contact', hash: 'next' }}
+                className="kr-notice-btn-enquire"
+              >
+                <span>{t('inquiryFormBtn')} &rarr;</span>
+              </Link>
             </div>
           </div>
-          <div className="kr-notice-actions">
-            <Link href="/plots" className="kr-notice-btn-search">
-              <svg viewBox="0 0 24 24">
-                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z" />
-              </svg>
-              <span>{t('viewPlotsBtn')}</span>
-            </Link>
-            <Link href="/contact" className="kr-notice-btn-enquire">
-              <span>{t('inquiryFormBtn')} &rarr;</span>
-            </Link>
-          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

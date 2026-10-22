@@ -129,7 +129,7 @@ $staffEmailBody = <<<HTML
 <body style="margin: 0; padding: 24px; font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; background-color: #FAF7F2; color: #1A1A1A;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 6px; border: 1px solid #e5e5e5; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
         <tr>
-            <td style="background-color: #E10600; border-bottom: 3px solid #00491E; padding: 24px 28px; color: #ffffff;">
+            <td style="background-color: #bo1f24; border-bottom: 3px solid #00491E; padding: 24px 28px; color: #ffffff;">
                 <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                         <td>
@@ -152,7 +152,7 @@ $staffEmailBody = <<<HTML
                     </tr>
                     <tr style="border-bottom: 1px solid #f0f0f0;">
                         <td style="color: #666; font-weight: 600;">Client Email:</td>
-                        <td><a href="mailto:{$htmlEmail}" style="color: #E10600; text-decoration: underline; font-weight: 600;">{$htmlEmail}</a></td>
+                        <td><a href="mailto:{$htmlEmail}" style="color: #bo1f24; text-decoration: underline; font-weight: 600;">{$htmlEmail}</a></td>
                     </tr>
                     <tr style="border-bottom: 1px solid #f0f0f0;">
                         <td style="color: #666; font-weight: 600;">Phone Number:</td>
@@ -167,7 +167,7 @@ $staffEmailBody = <<<HTML
                 <hr style="border: none; border-top: 1px solid #eeeeee; margin: 24px 0;">
 
                 <p style="margin: 0 0 10px; font-weight: 700; color: #1A1A1A; font-size: 16px;">Message Details:</p>
-                <div style="background-color: #FCF8F8; border-left: 4px solid #E10600; padding: 18px 20px; border-radius: 4px; font-size: 15.5px; line-height: 1.65; color: #222;">
+                <div style="background-color: #FCF8F8; border-left: 4px solid #bo1f24; padding: 18px 20px; border-radius: 4px; font-size: 15.5px; line-height: 1.65; color: #222;">
                     {$htmlMessage}
                 </div>
 
@@ -198,7 +198,7 @@ $autoReplyBody = <<<HTML
 <body style="margin: 0; padding: 24px; font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; background-color: #FAF7F2; color: #1A1A1A;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 6px; border: 1px solid #e5e5e5; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
         <tr>
-            <td style="background-color: #E10600; border-bottom: 3px solid #00491E; padding: 26px 28px; text-align: center; color: #ffffff;">
+            <td style="background-color: #bo1f24; border-bottom: 3px solid #00491E; padding: 26px 28px; text-align: center; color: #ffffff;">
                 <h1 style="margin: 0; font-family: 'EB Garamond', Georgia, serif; font-size: 26px; font-weight: 700; letter-spacing: 0.8px; color: #ffffff;">KIRIMA RISE</h1>
                 <p style="margin: 4px 0 0; font-size: 13px; font-style: italic; opacity: 0.95; color: #ffffff;">Kirima Rise is an entity of the Estate of G.K. Kirima</p>
                 <div style="margin-top: 10px; display: inline-block; background-color: #00491E; color: #ffffff; font-size: 11px; font-weight: bold; padding: 4px 14px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase;">
@@ -220,8 +220,8 @@ $autoReplyBody = <<<HTML
                     Thank you for contacting <strong>Kirima Rise</strong>. We have successfully logged your inquiry regarding <strong>{$htmlSubject}</strong>.
                 </p>
 
-                <div style="background-color: #FCF8F8; border-left: 4px solid #E10600; padding: 15px 18px; margin-bottom: 22px; border-radius: 4px; font-size: 14.5px; line-height: 1.65; color: #333;">
-                    <strong style="color: #E10600;">Your Message Summary:</strong><br>
+                <div style="background-color: #FCF8F8; border-left: 4px solid #bo1f24; padding: 15px 18px; margin-bottom: 22px; border-radius: 4px; font-size: 14.5px; line-height: 1.65; color: #333;">
+                    <strong style="color: #bo1f24;">Your Message Summary:</strong><br>
                     {$htmlMessage}
                 </div>
 

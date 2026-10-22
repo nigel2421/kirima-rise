@@ -26,9 +26,8 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
 
   return (
     <div
-      className={`kr-language-switcher ${
-        isMobile ? 'kr-lang-mobile' : 'kr-lang-desktop'
-      }`}
+      className={`kr-language-switcher ${isMobile ? 'kr-lang-mobile' : 'kr-lang-desktop'
+        }`}
       style={{
         display: 'inline-flex',
         alignItems: 'center',
@@ -55,7 +54,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
           fontFamily: 'inherit',
           fontSize: 'inherit',
           fontWeight: 'inherit',
-          color: locale === 'en' ? '#E10600' : '#00491E',
+          color: locale === 'en' ? '#bo1f24' : '#00491E',
           textDecoration: locale === 'en' ? 'underline' : 'none',
           textUnderlineOffset: '4px',
           transition: 'color 0.2s ease',
@@ -79,7 +78,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
           fontFamily: 'inherit',
           fontSize: 'inherit',
           fontWeight: 'inherit',
-          color: locale === 'sw' ? '#E10600' : '#00491E',
+          color: locale === 'sw' ? '#bo1f24' : '#00491E',
           textDecoration: locale === 'sw' ? 'underline' : 'none',
           textUnderlineOffset: '4px',
           transition: 'color 0.2s ease',

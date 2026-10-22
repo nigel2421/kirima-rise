@@ -10,7 +10,7 @@ This repository hosts the official website, design assets, and brand implementat
 
 - **Official Brand Design Guidelines**: Documented in [`design.md`](./design.md) and [`KIRIMA Rise Brand Guidelines 2.09.26.pdf`](./KIRIMA%20Rise%20Brand%20Guidelines%202.09.26.pdf).
 - **Core Visual Identity**:
-  - **Kirima Red** (`#E10600` / Pantone 2357 C)
+  - **Kirima Red** (`#bo1f24` / Pantone 2357 C)
   - **Heritage Forest Green** (`#00491E` / Pantone 3537 C)
   - **Warm Sand / Cream** (`#FAF7F2`) & Pure White (`#FFFFFF`)
 
