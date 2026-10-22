@@ -14,3 +14,9 @@ $RECYCLE.BIN/
 # Temporary and log files
 *.log
 scratch/
+
+# Next.js and Dependencies
+node_modules/
+.next/
+out/
+.env*.local
