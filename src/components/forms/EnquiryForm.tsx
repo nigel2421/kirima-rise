@@ -172,7 +172,7 @@ export default function EnquiryForm({ initialSubject = '', parcelNo, block }: En
               disabled={submitting}
               style={{
                 flex: '1 1 200px',
-                background: '#bo1f24',
+                background: '#B01F24',
                 color: '#FFFFFF',
                 border: 'none',
                 padding: '14px 22px',

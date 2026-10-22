@@ -2,7 +2,7 @@
  * KIRIMA RISE — Master Brand Design Stylesheet
  * Version: 2.0 (Aligned with Official Brand Guidelines 2.09.26)
  * Entity: Kirima Rise is an entity of the Estate of G.K. Kirima
- * Primary Red: Pantone 2357 C (#bo1f24)
+ * Primary Red: Pantone 2357 C (#B01F24)
  * Primary Green: Pantone 3537 C (#00491E)
  * Primary Typeface: EB Garamond
  */
@@ -146,7 +146,7 @@ canvas {
     width: max-content !important;
     background: #FFFFFF !important;
     border: 1px solid #E5E7EB !important;
-    border-top: 3px solid #bo1f24 !important;
+    border-top: 3px solid #B01F24 !important;
     border-radius: 0 0 8px 8px !important;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16) !important;
     padding: 8px 0 !important;
@@ -203,7 +203,7 @@ canvas {
 
 .hfe-nav-menu ul.sub-menu li a:hover,
 .elementor-element-389ef415 ul.sub-menu li a:hover {
-    color: #bo1f24 !important;
+    color: #B01F24 !important;
     background-color: #FEF2F2 !important;
     padding-left: 26px !important;
 }
@@ -1913,7 +1913,7 @@ blockquote,
    GLOBAL HEADINGS & TYPOGRAPHY THEME (Live Site Aligned)
    Reference: https://kirima.great-site.net/?i=3
    "Kirima Rise. Empowering Tomorrow." in Plus Jakarta Sans
-   Primary Color: #B01F24 / #bo1f24, Text Transform: Capitalize
+   Primary Color: #B01F24 / #B01F24, Text Transform: Capitalize
    ======================================================== */
 .elementor-kit-7 {
     --e-global-typography-primary-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
