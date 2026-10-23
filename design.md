@@ -26,7 +26,7 @@ The brand palette is strictly governed by the approved Pantone standards. Digita
 
 | Swatch | Color Name | Pantone | Hex | RGB | CMYK | Role / Usage |
 | --- | --- | --- | --- | --- | --- | --- |
-| ![#bo1f24](https://via.placeholder.com/20/bo1f24/000000?text=+) | **Kirima Red** | **Pantone 2357 C** | `#bo1f24` | `rgb(255, 6, 0)` | `0, 97, 100, 12` | Primary brand identifier, primary call-to-action buttons, hero badges, main headings, top alert banners, email headers. |
+| ![#B01F24](https://via.placeholder.com/20/#B01F24/000000?text=+) | **Kirima Red** | **Pantone 2357 C** | `#B01F24` | `rgb(255, 6, 0)` | `0, 97, 100, 12` | Primary brand identifier, primary call-to-action buttons, hero badges, main headings, top alert banners, email headers. |
 | ![#00491E](https://via.placeholder.com/20/00491E/000000?text=+) | **Heritage Forest Green** | **Pantone 3537 C** | `#00491E` | `rgb(0, 73, 39)` | `100, 0, 59, 71` | Secondary brand anchor, verification checks, secondary CTAs, trust badges, borders, button outlines, WhatsApp / direct contact highlights. |
 
 ### 2.2 Neutral & Supporting Palette
@@ -42,9 +42,9 @@ The brand palette is strictly governed by the approved Pantone standards. Digita
 
 ### 2.3 Color Usage Rules
 
-- **Never substitute** Kirima Red (`#bo1f24`) with generic crimson, brick red (`#B01F24` or `#970B10`), or orange.
+- **Never substitute** Kirima Red (`#B01F24`) with generic crimson, brick red (`#B01F24` or `#970B10`), or orange.
 - **Never substitute** Heritage Green (`#00491E`) with bright neon green or olive.
-- **Contrast Compliance:** When placing text over Kirima Red (`#bo1f24`), use **Pure White (`#FFFFFF`)**. When placing text over Heritage Forest Green (`#00491E`), use **Pure White (`#FFFFFF`)**.
+- **Contrast Compliance:** When placing text over Kirima Red (`#B01F24`), use **Pure White (`#FFFFFF`)**. When placing text over Heritage Forest Green (`#00491E`), use **Pure White (`#FFFFFF`)**.
 
 ---
 
@@ -109,8 +109,8 @@ The official logo consists of:
 ### 4.2 Approved Logo Variations
 
 1. **Full Colour (Primary):**
-   - Icon: Red (`#bo1f24`) and Forest Green (`#00491E`).
-   - Logotype "KIRIMA": Red (`#bo1f24`).
+   - Icon: Red (`#B01F24`) and Forest Green (`#00491E`).
+   - Logotype "KIRIMA": Red (`#B01F24`).
    - Rule & "RISE": Forest Green (`#00491E`).
    - Use on: White and light cream backgrounds.
 2. **Monochrome White (Reversed):**
@@ -144,7 +144,7 @@ All websites and web applications must incorporate this core stylesheet foundati
 ```css
 :root {
   /* Brand Colors */
-  --kr-color-red: #bo1f24;          /* Pantone 2357 C */
+  --kr-color-red: #B01F24;          /* Pantone 2357 C */
   --kr-color-green: #00491E;        /* Pantone 3537 C */
   --kr-color-white: #FFFFFF;
   --kr-color-cream: #FAF7F2;
@@ -247,7 +247,7 @@ All websites and web applications must incorporate this core stylesheet foundati
 
 #### Form Controls
 
-- Focus outline must always use **Heritage Forest Green (`#00491E`)** or **Kirima Red (`#bo1f24`)**.
+- Focus outline must always use **Heritage Forest Green (`#00491E`)** or **Kirima Red (`#B01F24`)**.
 - Input fields should feature crisp 1px borders in `#D1D5DB`, with 4px border-radius and 16px font-size to prevent mobile browser zoom.
 
 ---
@@ -261,13 +261,13 @@ All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must fo
 - **Max Width:** `600px` to `620px` centered table layout.
 - **Background:** Neutral off-white `#F7F7F7` outer canvas with pure white `#FFFFFF` content card.
 - **Header Banner:**
-  - Background: Kirima Red (`#bo1f24`).
+  - Background: Kirima Red (`#B01F24`).
   - Accent Trim: 3px solid Heritage Forest Green (`#00491E`).
   - Typography: Pure White `#FFFFFF`, `'EB Garamond', Georgia, serif`.
   - Content: Official brand logo or crisp title with descriptor.
 - **Message Callout / Summary:**
   - Background: Light cream `#FAF7F2` or subtle tint `#FCF8F8`.
-  - Border: 4px solid Kirima Red (`#bo1f24`).
+  - Border: 4px solid Kirima Red (`#B01F24`).
 - **Confirmation / Action Alerts:**
   - Border: 1px solid `#00491E`.
   - Icon / Check: Heritage Forest Green (`#00491E`).
@@ -305,7 +305,7 @@ All outgoing emails sent from the platform (e.g. via `send-enquiry.php`) must fo
 
 1. **Vehicle Livery:**
    - **Option 1 (White Vehicle):** Clean white exterior, full-color Kirima Rise logo on side doors, lion watermark in subtle red tint across rear panel, contact details in Heritage Forest Green.
-   - **Option 2 (Red Vehicle):** Pure Kirima Red (`#bo1f24`) vehicle wrap, solid white reverse logo on front doors, deep maroon lion motif watermark on rear panels.
+   - **Option 2 (Red Vehicle):** Pure Kirima Red (`#B01F24`) vehicle wrap, solid white reverse logo on front doors, deep maroon lion motif watermark on rear panels.
    - **Delivery Scooters:** White body with rear delivery box branded in full color.
 2. **Signage (Streets & Courts):**
    - Estate street and court signage formatted with dark forest green or charcoal framing, clean white or brushed steel plaques, with the official Kirima Rise emblem and court designation set in bold EB Garamond.

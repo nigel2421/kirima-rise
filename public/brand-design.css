@@ -2118,3 +2118,55 @@ a.elementor-button[href="#next"]:focus .elementor-button-icon svg path,
     fill: #00491E !important;
     transform: translateY(2px) !important;
 }
+
+/* ========================================================
+   Brand Header Language Switcher (EN | SW)
+   ======================================================== */
+.kr-lang-switcher {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(0, 73, 30, 0.06) !important;
+    border: 1px solid rgba(0, 73, 30, 0.18) !important;
+    border-radius: 6px !important;
+    padding: 5px 12px !important;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    margin: 0 4px !important;
+}
+
+.kr-lang-btn {
+    font-family: inherit !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.05em !important;
+}
+
+.kr-lang-btn.kr-lang-active {
+    color: #B01F24 !important;
+    font-weight: 800 !important;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+.kr-lang-btn.kr-lang-inactive {
+    color: #00491E !important;
+    font-weight: 600 !important;
+    transition: color 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.kr-lang-btn.kr-lang-inactive:hover {
+    color: #B01F24 !important;
+}
+
+.kr-lang-divider {
+    color: #888888 !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    user-select: none !important;
+}
