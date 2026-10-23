@@ -11,12 +11,6 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 
-# Temporary and log files
+# Logs and temporary files
 *.log
 scratch/
-
-# Next.js and Dependencies
-node_modules/
-.next/
-out/
-.env*.local

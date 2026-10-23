@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://kirimarise.co.ke/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kirimarise.co.ke/sw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://kirimarise.co.ke/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/about/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/about/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kirimarise.co.ke/sw/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/about/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/about/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Our Heritage -->
+  <url>
+    <loc>https://kirimarise.co.ke/our-heritage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/our-heritage/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/our-heritage/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kirimarise.co.ke/sw/our-heritage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/our-heritage/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/our-heritage/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact & Verified Plots Directory -->
+  <url>
+    <loc>https://kirimarise.co.ke/sample-page/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/sample-page/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/sample-page/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kirimarise.co.ke/sw/sample-page/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kirimarise.co.ke/sample-page/" />
+    <xhtml:link rel="alternate" hreflang="sw" href="https://kirimarise.co.ke/sw/sample-page/" />
+    <lastmod>2026-10-23T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

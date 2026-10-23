@@ -289,15 +289,5 @@ translate_page('about/index.html', 'sw/about/index.html', 2, about_translations,
 translate_page('our-heritage/index.html', 'sw/our-heritage/index.html', 2, heritage_translations, 'Urithi Wetu | Kirima Rise')
 translate_page('sample-page/index.html', 'sw/sample-page/index.html', 2, sample_translations, 'Mawasiliano na Viwanja | Kirima Rise')
 
-# Mirror to public/
-for src, dst in [
-    ('sw/index.html', 'public/sw/index.html'),
-    ('sw/about/index.html', 'public/sw/about/index.html'),
-    ('sw/our-heritage/index.html', 'public/sw/our-heritage/index.html'),
-    ('sw/sample-page/index.html', 'public/sw/sample-page/index.html'),
-]:
-    os.makedirs(os.path.dirname(dst), exist_ok=True)
-    shutil.copy2(src, dst)
-    print(f"Mirrored {src} -> {dst}")
+print("All Swahili pages built successfully!")
 
-print("All Swahili pages built and mirrored successfully!")
