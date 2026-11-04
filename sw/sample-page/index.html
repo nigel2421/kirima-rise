@@ -3677,7 +3677,9 @@
             </svg>
           </span>
           <p class="kr-topbar-text">
-            <strong>MUHIMU</strong> &mdash; Jilinde dhidi ya utapeli. Shirika la Urithi wa GK Kirima linapokea malipo kupitia njia rasmi pekee zilizoorodheshwa kwenye wavuti huu. Ukipokea maagizo ya kulipa nje ya njia hizi, usilipe, na utuarifu mara moja.
+            <strong>IMPORTANT</strong> &mdash; Jilinde dhidi ya utapeli. Shirika la Urithi wa GK Kirima linapokea malipo kupitia njia rasmi pekee zilizoorodheshwa kwenye wavuti huu. Ukipokea maagizo ya kulipa nje ya njia hizi, usilipe, na utuarifu mara moja.
+            through official channels listed on this website. If you have been asked to pay anyone outside these
+            channels, do not pay, and report it to us immediately.
           </p>
         </div>
       </div>
@@ -3753,8 +3755,8 @@
             <li><a href="../index.html" class="kr-mobile-nav-link">NYUMBANI</a></li>
             <li class="kr-mobile-has-sub">
               <div class="kr-mobile-sub-toggle">
-                <a href="../about/index.html" class="kr-mobile-nav-link">KUHUSU SISI</a>
-                <button type="button" class="kr-mobile-sub-btn" aria-label="Fungua orodha ya Kuhusu Sisi">
+                <a href="../about/index.html" class="kr-mobile-nav-link">ABOUT</a>
+                <button type="button" class="kr-mobile-sub-btn" aria-label="Toggle About submenu">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
@@ -4227,6 +4229,16 @@
                 border: 1px dashed #D1D5DB;
               }
 
+              .kr-sold-notice {
+                text-align: center;
+                padding: 36px 20px;
+                color: #1F2937;
+                background: #FEF2F2;
+                border-radius: 10px;
+                border: 1.5px solid #FCA5A5;
+                box-shadow: 0 4px 12px rgba(176, 31, 36, 0.06);
+              }
+
               .kr-no-results-btn {
                 margin-top: 14px;
                 display: inline-block;
@@ -4488,6 +4500,23 @@
                     </div>
                     <button type="button" class="kr-no-results-btn" id="krEnquireNotFoundBtn">Tuma Uchunguzi kwa Kiwanja Hiki</button>
                   </div>
+                  <div id="krSoldNotice" class="kr-sold-notice" style="display: none;">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🏷️</div>
+                    <div style="font-weight: 700; font-size: 17px; color: #B01F24; margin-bottom: 6px;">
+                      Kiwanja Kimeuzwa / Kimehalalishwa
+                    </div>
+                    <div style="font-size: 13.5px; max-width: 520px; margin: 0 auto 14px; line-height: 1.5; color: #4B5563;">
+                      Kiwanja <strong id="krSoldParcelText" style="color: #111827;">#2316</strong> chini ya <strong>Block 220</strong> kimeshauzwa na kuhalalishwa. Hakipatikani tena katika orodha ya maulizo ya sasa.
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #FEE2E2; color: #991B1B; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;">
+                      <span>&bull; Hali: Kimeuzwa / Kimefungwa</span>
+                    </div>
+                    <div>
+                      <button type="button" class="kr-no-results-btn" id="krEnquireSoldBtn" style="background: #4B5563;">
+                        Thibitisha Hatimiliki / Rekodi ya Uhalalishaji &rarr;
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -4495,6 +4524,20 @@
             <script>
               (function () {
                 const plotsData = [{ "parcel": "651", "block": "Block 220/651", "category": "Block 220" }, { "parcel": "676", "block": "Block 220/676", "category": "Block 220" }, { "parcel": "677", "block": "Block 220/677", "category": "Block 220" }, { "parcel": "679", "block": "Block 220/679", "category": "Block 220" }, { "parcel": "693", "block": "Block 220/693", "category": "Block 220" }, { "parcel": "696", "block": "Block 220/696", "category": "Block 220" }, { "parcel": "699", "block": "Block 220/699", "category": "Block 220" }, { "parcel": "701", "block": "Block 220/701", "category": "Block 220" }, { "parcel": "708", "block": "Block 220/708", "category": "Block 220" }, { "parcel": "709", "block": "Block 220/709", "category": "Block 220" }, { "parcel": "712", "block": "Block 220/712", "category": "Block 220" }, { "parcel": "713", "block": "Block 220/713", "category": "Block 220" }, { "parcel": "722", "block": "Block 220/722", "category": "Block 220" }, { "parcel": "723", "block": "Block 220/723", "category": "Block 220" }, { "parcel": "725", "block": "Block 220/725", "category": "Block 220" }, { "parcel": "727", "block": "Block 220/727", "category": "Block 220" }, { "parcel": "729", "block": "Block 220/729", "category": "Block 220" }, { "parcel": "730", "block": "Block 220/730", "category": "Block 220" }, { "parcel": "733", "block": "Block 220/733", "category": "Block 220" }, { "parcel": "734", "block": "Block 220/734", "category": "Block 220" }, { "parcel": "735", "block": "Block 220/735", "category": "Block 220" }, { "parcel": "736", "block": "Block 220/736", "category": "Block 220" }, { "parcel": "771", "block": "Block 220/771", "category": "Block 220" }, { "parcel": "785", "block": "Block 220/785", "category": "Block 220" }, { "parcel": "801", "block": "Block 220/801", "category": "Block 220" }, { "parcel": "802", "block": "Block 220/802", "category": "Block 220" }, { "parcel": "807", "block": "Block 220/807", "category": "Block 220" }, { "parcel": "810", "block": "Block 220/810", "category": "Block 220" }, { "parcel": "813", "block": "Block 220/813", "category": "Block 220" }, { "parcel": "823", "block": "Block 220/823", "category": "Block 220" }, { "parcel": "827", "block": "Block 220/827", "category": "Block 220" }, { "parcel": "835", "block": "Block 220/835", "category": "Block 220" }, { "parcel": "838", "block": "Block 220/838", "category": "Block 220" }, { "parcel": "848", "block": "Block 220/848", "category": "Block 220" }, { "parcel": "851", "block": "Block 220/851", "category": "Block 220" }, { "parcel": "857", "block": "Block 220/857", "category": "Block 220" }, { "parcel": "861", "block": "Block 220/861", "category": "Block 220" }, { "parcel": "863", "block": "Block 220/863", "category": "Block 220" }, { "parcel": "880", "block": "Block 220/880", "category": "Block 220" }, { "parcel": "881", "block": "Block 220/881", "category": "Block 220" }, { "parcel": "883", "block": "Block 220/883", "category": "Block 220" }, { "parcel": "884", "block": "Block 220/884", "category": "Block 220" }, { "parcel": "896", "block": "Block 220/896", "category": "Block 220" }, { "parcel": "903", "block": "Block 220/903", "category": "Block 220" }, { "parcel": "973", "block": "Block 220/973", "category": "Block 220" }, { "parcel": "2553", "block": "Block 220/2553", "category": "Block 220" }, { "parcel": "2554", "block": "Block 220/2554", "category": "Block 220" }, { "parcel": "3241", "block": "Block 220/3241", "category": "Block 220" }, { "parcel": "3546", "block": "Block 179/3546", "category": "Block 179" }, { "parcel": "3552", "block": "Block 179/3552", "category": "Block 179" }, { "parcel": "3584", "block": "Block 179/3584", "category": "Block 179" }, { "parcel": "3586", "block": "Block 179/3586", "category": "Block 179" }, { "parcel": "3693", "block": "Block 179/3693", "category": "Block 179" }, { "parcel": "3712", "block": "Block 179/3712", "category": "Block 179" }, { "parcel": "3716", "block": "Block 179/3716", "category": "Block 179" }, { "parcel": "3980", "block": "Block 179/3980", "category": "Block 179" }, { "parcel": "3981", "block": "Block 179/3981", "category": "Block 179" }, { "parcel": "3982", "block": "Block 179/3982", "category": "Block 179" }, { "parcel": "4018", "block": "Block 179/4018", "category": "Block 179" }, { "parcel": "4084", "block": "Block 179/4084", "category": "Block 179" }, { "parcel": "4096", "block": "Block 179/4096", "category": "Block 179" }, { "parcel": "4429", "block": "Block 179/4429", "category": "Block 179" }, { "parcel": "4437", "block": "Block 179/4437", "category": "Block 179" }, { "parcel": "4503", "block": "Block 179/4503", "category": "Block 179" }, { "parcel": "4505", "block": "Block 179/4505", "category": "Block 179" }, { "parcel": "4506", "block": "Block 179/4506", "category": "Block 179" }, { "parcel": "4510", "block": "Block 179/4510", "category": "Block 179" }, { "parcel": "4513", "block": "Block 179/4513", "category": "Block 179" }, { "parcel": "4517", "block": "Block 179/4517", "category": "Block 179" }, { "parcel": "4520", "block": "Block 179/4520", "category": "Block 179" }, { "parcel": "4521", "block": "Block 179/4521", "category": "Block 179" }, { "parcel": "4524", "block": "Block 179/4524", "category": "Block 179" }, { "parcel": "4529", "block": "Block 179/4529", "category": "Block 179" }, { "parcel": "4604", "block": "Block 179/4604", "category": "Block 179" }, { "parcel": "4609", "block": "Block 179/4609", "category": "Block 179" }, { "parcel": "4616", "block": "Block 179/4616", "category": "Block 179" }, { "parcel": "4617", "block": "Block 179/4617", "category": "Block 179" }, { "parcel": "4622", "block": "Block 179/4622", "category": "Block 179" }, { "parcel": "4623", "block": "Block 179/4623", "category": "Block 179" }, { "parcel": "4624", "block": "Block 179/4624", "category": "Block 179" }, { "parcel": "4625", "block": "Block 179/4625", "category": "Block 179" }, { "parcel": "4626", "block": "Block 179/4626", "category": "Block 179" }, { "parcel": "4627", "block": "Block 179/4627", "category": "Block 179" }, { "parcel": "4629", "block": "Block 179/4629", "category": "Block 179" }, { "parcel": "4644", "block": "Block 179/4644", "category": "Block 179" }, { "parcel": "4653", "block": "Block 179/4653", "category": "Block 179" }, { "parcel": "4673", "block": "Block 179/4673", "category": "Block 179" }, { "parcel": "4706", "block": "Block 179/4706", "category": "Block 179" }, { "parcel": "4714", "block": "Block 179/4714", "category": "Block 179" }, { "parcel": "4743", "block": "Block 179/4743", "category": "Block 179" }, { "parcel": "4765", "block": "Block 179/4765", "category": "Block 179" }, { "parcel": "4775", "block": "Block 179/4775", "category": "Block 179" }, { "parcel": "4779", "block": "Block 179/4779", "category": "Block 179" }, { "parcel": "5042", "block": "Block 179/5042", "category": "Block 179" }, { "parcel": "5093", "block": "Block 179/5093", "category": "Block 179" }, { "parcel": "5094", "block": "Block 179/5094", "category": "Block 179" }, { "parcel": "5095", "block": "Block 179/5095", "category": "Block 179" }, { "parcel": "5105", "block": "Block 179/5105", "category": "Block 179" }, { "parcel": "5113", "block": "Block 179/5113", "category": "Block 179" }, { "parcel": "5115", "block": "Block 179/5115", "category": "Block 179" }, { "parcel": "5116", "block": "Block 179/5116", "category": "Block 179" }, { "parcel": "5117", "block": "Block 179/5117", "category": "Block 179" }, { "parcel": "5118", "block": "Block 179/5118", "category": "Block 179" }, { "parcel": "5119", "block": "Block 179/5119", "category": "Block 179" }, { "parcel": "5120", "block": "Block 179/5120", "category": "Block 179" }, { "parcel": "5128", "block": "Block 179/5128", "category": "Block 179" }, { "parcel": "5130", "block": "Block 179/5130", "category": "Block 179" }, { "parcel": "5144", "block": "Block 179/5144", "category": "Block 179" }, { "parcel": "5145", "block": "Block 179/5145", "category": "Block 179" }, { "parcel": "5150", "block": "Block 179/5150", "category": "Block 179" }, { "parcel": "5151", "block": "Block 179/5151", "category": "Block 179" }, { "parcel": "6346", "block": "Block 220/6346", "category": "Block 220" }, { "parcel": "6368", "block": "Block 220/6368", "category": "Block 220" }, { "parcel": "6404", "block": "Block 220/6404", "category": "Block 220" }, { "parcel": "6421", "block": "Block 220/6421", "category": "Block 220" }, { "parcel": "6422", "block": "Block 220/6422", "category": "Block 220" }, { "parcel": "6424", "block": "Block 220/6424", "category": "Block 220" }, { "parcel": "6431", "block": "Block 220/6431", "category": "Block 220" }, { "parcel": "6433", "block": "Block 220/6433", "category": "Block 220" }, { "parcel": "6434", "block": "Block 220/6434", "category": "Block 220" }, { "parcel": "6438", "block": "Block 220/6438", "category": "Block 220" }, { "parcel": "6439", "block": "Block 220/6439", "category": "Block 220" }, { "parcel": "6441", "block": "Block 220/6441", "category": "Block 220" }, { "parcel": "6442", "block": "Block 220/6442", "category": "Block 220" }, { "parcel": "6443", "block": "Block 220/6443", "category": "Block 220" }, { "parcel": "6445", "block": "Block 220/6445", "category": "Block 220" }, { "parcel": "6447", "block": "Block 220/6447", "category": "Block 220" }, { "parcel": "6450", "block": "Block 220/6450", "category": "Block 220" }, { "parcel": "6461", "block": "Block 220/6461", "category": "Block 220" }, { "parcel": "6463", "block": "Block 220/6463", "category": "Block 220" }, { "parcel": "6475", "block": "Block 220/6475", "category": "Block 220" }, { "parcel": "6476", "block": "Block 220/6476", "category": "Block 220" }, { "parcel": "6477", "block": "Block 220/6477", "category": "Block 220" }, { "parcel": "7173", "block": "Block 220/7173", "category": "Block 220" }, { "parcel": "7179", "block": "Block 220/7179", "category": "Block 220" }, { "parcel": "7188", "block": "Block 220/7188", "category": "Block 220" }, { "parcel": "603", "block": "Block 220/603", "category": "Block 220" }, { "parcel": "604", "block": "Block 220/604", "category": "Block 220" }, { "parcel": "606", "block": "Block 220/606", "category": "Block 220" }, { "parcel": "607", "block": "Block 220/607", "category": "Block 220" }, { "parcel": "609", "block": "Block 220/609", "category": "Block 220" }, { "parcel": "610", "block": "Block 220/610", "category": "Block 220" }, { "parcel": "615", "block": "Block 220/615", "category": "Block 220" }, { "parcel": "618", "block": "Block 220/618", "category": "Block 220" }, { "parcel": "620", "block": "Block 220/620", "category": "Block 220" }, { "parcel": "625", "block": "Block 220/625", "category": "Block 220" }, { "parcel": "630", "block": "Block 220/630", "category": "Block 220" }, { "parcel": "634", "block": "Block 220/634", "category": "Block 220" }, { "parcel": "635", "block": "Block 220/635", "category": "Block 220" }, { "parcel": "638", "block": "Block 220/638", "category": "Block 220" }, { "parcel": "646", "block": "Block 220/646", "category": "Block 220" }, { "parcel": "647", "block": "Block 220/647", "category": "Block 220" }, { "parcel": "653", "block": "Block 220/653", "category": "Block 220" }, { "parcel": "678", "block": "Block 220/678", "category": "Block 220" }, { "parcel": "688", "block": "Block 220/688", "category": "Block 220" }, { "parcel": "689", "block": "Block 220/689", "category": "Block 220" }, { "parcel": "690", "block": "Block 220/690", "category": "Block 220" }, { "parcel": "695", "block": "Block 220/695", "category": "Block 220" }, { "parcel": "697", "block": "Block 220/697", "category": "Block 220" }, { "parcel": "731", "block": "Block 220/731", "category": "Block 220" }, { "parcel": "768", "block": "Block 220/768", "category": "Block 220" }, { "parcel": "777", "block": "Block 220/777", "category": "Block 220" }, { "parcel": "803", "block": "Block 220/803", "category": "Block 220" }, { "parcel": "826", "block": "Block 220/826", "category": "Block 220" }, { "parcel": "866", "block": "Block 220/866", "category": "Block 220" }, { "parcel": "976", "block": "Block 220/976", "category": "Block 220" }, { "parcel": "2599", "block": "Block 220/2599", "category": "Block 220" }, { "parcel": "2600", "block": "Block 220/2600", "category": "Block 220" }, { "parcel": "2602", "block": "Block 220/2602", "category": "Block 220" }, { "parcel": "2897", "block": "Block 220/2897", "category": "Block 220" }, { "parcel": "3147", "block": "Block 220/3147", "category": "Block 220" }, { "parcel": "3235", "block": "Block 220/3235", "category": "Block 220" }, { "parcel": "3521", "block": "Block 179/3521", "category": "Block 179" }, { "parcel": "3545", "block": "Block 179/3545", "category": "Block 179" }, { "parcel": "3549", "block": "Block 179/3549", "category": "Block 179" }, { "parcel": "3554", "block": "Block 179/3554", "category": "Block 179" }, { "parcel": "3555", "block": "Block 179/3555", "category": "Block 179" }, { "parcel": "3823", "block": "Block 220/3823", "category": "Block 220" }, { "parcel": "3941", "block": "Block 179/3941", "category": "Block 179" }, { "parcel": "4025", "block": "Block 179/4025", "category": "Block 179" }, { "parcel": "4041", "block": "Block 179/4041", "category": "Block 179" }, { "parcel": "4074", "block": "Block 220/4074", "category": "Block 220" }, { "parcel": "4075", "block": "Block 179/4075", "category": "Block 179" }, { "parcel": "4087", "block": "Block 220/4087", "category": "Block 220" }, { "parcel": "4376", "block": "Block 179/4376", "category": "Block 179" }, { "parcel": "4403", "block": "Block 179/4403", "category": "Block 179" }, { "parcel": "4404", "block": "Block 179/4404", "category": "Block 179" }, { "parcel": "4405", "block": "Block 179/4405", "category": "Block 179" }, { "parcel": "4407", "block": "Block 220/4407", "category": "Block 220" }, { "parcel": "4413", "block": "Block 179/4413", "category": "Block 179" }, { "parcel": "4418", "block": "Block 179/4418", "category": "Block 179" }, { "parcel": "4435", "block": "Block 179/4435", "category": "Block 179" }, { "parcel": "4436", "block": "Block 179/4436", "category": "Block 179" }, { "parcel": "4452", "block": "Block 179/4452", "category": "Block 179" }, { "parcel": "4453", "block": "Block 179/4453", "category": "Block 179" }, { "parcel": "4460", "block": "Block 179/4460", "category": "Block 179" }, { "parcel": "4470", "block": "Block 179/4470", "category": "Block 179" }, { "parcel": "4471", "block": "Block 179/4471", "category": "Block 179" }, { "parcel": "4482", "block": "Block 179/4482", "category": "Block 179" }, { "parcel": "4486", "block": "Block 179/4486", "category": "Block 179" }];
+
+                // SOLD PLOTS BLACKLIST & EXCLUSION FILTER (Block 220 sold plots)
+                const SOLD_PLOTS = [
+                  { parcel: '2316', block: 'Block 220/2316', category: 'Block 220' },
+                  { parcel: '2317', block: 'Block 220/2317', category: 'Block 220' },
+                  { parcel: '2318', block: 'Block 220/2318', category: 'Block 220' },
+                  { parcel: '2319', block: 'Block 220/2319', category: 'Block 220' },
+                  { parcel: '2322', block: 'Block 220/2322', category: 'Block 220' },
+                  { parcel: '2457', block: 'Block 220/2457', category: 'Block 220' }
+                ];
+                const SOLD_PARCEL_NUMBERS = SOLD_PLOTS.map(p => p.parcel);
+
+                // Ensure all sold plots are removed from active directory
+                const activePlotsData = plotsData.filter(item => !SOLD_PARCEL_NUMBERS.includes(item.parcel));
 
                 let activeCategory = 'ALL';
                 let searchTerm = '';
@@ -4507,6 +4550,9 @@
                 const grid = document.getElementById('krPlotsGrid');
                 const visibleCount = document.getElementById('krVisibleCount');
                 const noResults = document.getElementById('krNoResults');
+                const soldNotice = document.getElementById('krSoldNotice');
+                const soldParcelText = document.getElementById('krSoldParcelText');
+                const enquireSoldBtn = document.getElementById('krEnquireSoldBtn');
                 const toast = document.getElementById('krMatchToast');
                 const toastText = document.getElementById('krMatchToastText');
                 const toastLink = document.getElementById('krMatchToastLink');
@@ -4525,7 +4571,17 @@
                   grid.innerHTML = '';
                   let matched = 0;
 
-                  plotsData.forEach(function (item) {
+                  // Check if search matches sold plots
+                  let matchedSold = [];
+                  if (query) {
+                    matchedSold = SOLD_PLOTS.filter(sp => {
+                      return sp.parcel.toLowerCase() === query ||
+                             sp.block.toLowerCase().replace(/\s+/g, '').includes(query.replace(/\s+/g, '')) ||
+                             (query.length >= 3 && sp.parcel.toLowerCase().includes(query));
+                    });
+                  }
+
+                  activePlotsData.forEach(function (item) {
                     const matchesCategory = (activeCategory === 'ALL' || item.category === activeCategory);
                     const matchesSearch = (!query || item.parcel.toLowerCase().includes(query) || item.block.toLowerCase().includes(query));
 
@@ -4556,10 +4612,18 @@
 
                   if (matched === 0) {
                     grid.style.display = 'none';
-                    noResults.style.display = 'block';
+                    if (matchedSold.length > 0) {
+                      noResults.style.display = 'none';
+                      soldNotice.style.display = 'block';
+                      soldParcelText.textContent = matchedSold.map(s => `#${s.parcel} (${s.block})`).join(', ');
+                    } else {
+                      soldNotice.style.display = 'none';
+                      noResults.style.display = 'block';
+                    }
                   } else {
                     grid.style.display = 'grid';
                     noResults.style.display = 'none';
+                    soldNotice.style.display = 'none';
                   }
                 }
 
@@ -4650,6 +4714,25 @@
                     formEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 });
+
+                if (enquireSoldBtn) {
+                  enquireSoldBtn.addEventListener('click', function () {
+                    const query = searchInput.value.trim();
+                    const subjectInput = document.querySelector('input[name="subject"]') || document.querySelector('input[name="your-subject"]');
+                    const messageInput = document.querySelector('textarea[name="message"]') || document.querySelector('textarea[name="your-message"]');
+                    if (subjectInput) {
+                      subjectInput.value = `Maulizo: Kiwanja Kilichouzwa / Kimehalalishwa #${query || 'Block 220'} (Uthibitisho wa Hatimiliki)`;
+                      subjectInput.focus();
+                    }
+                    if (messageInput) {
+                      messageInput.value = `Habari timu ya Kirima Rise,\n\nNinawasiliana nanyi kuhusu Kiwanja #${query || 'chini ya Block 220'}, ambacho kimeandikwa kama kimeuzwa / kimehalalishwa.\n\nTafadhali thibitisheni uhalali wa umiliki wa hatimiliki na kumbukumbu ya kurasimishwa kwa kiwanja hiki?\n\nAsante.`;
+                    }
+                    const formEl = document.querySelector('.wpcf7') || document.querySelector('.elementor-element-50692bc');
+                    if (formEl) {
+                      formEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  });
+                }
 
                 // 4. Search Input Event
                 searchInput.addEventListener('input', function () {
@@ -6976,6 +7059,23 @@
                 00200</span>
             </li>
           </ul>
+          <div class="kr-footer-map-wrap">
+            <iframe
+              class="kr-footer-map-frame"
+              title="Ramani ya Mahali pa Kirima House"
+              src="https://maps.google.com/maps?q=Kirima+House,+Mokhtar+Daddah+Street,+Nairobi&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen="">
+            </iframe>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=Kirima+House,+Mokhtar+Daddah+Street,+Nairobi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="kr-footer-map-link">
+              <span>Fungua kwenye Google Maps &rarr;</span>
+            </a>
+          </div>
           <div class="kr-footer-socials">
             <a href="https://www.facebook.com/share/18x7eQD9VB/?mibextid=wwXIfr" target="_blank"
               rel="noopener noreferrer" class="kr-footer-social-btn" aria-label="Facebook">

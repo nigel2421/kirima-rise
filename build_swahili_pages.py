@@ -85,6 +85,8 @@ def translate_page(filepath, outpath, depth, translations, title_sw):
         ('&copy; 2026 Kirima Rise &bull; All Rights Reserved', '&copy; 2026 Kirima Rise &bull; Haki Zote Zimehifadhiwa'),
         ('Mokhtar Daddah Street, Nairobi', 'Mtaa wa Mokhtar Daddah, Nairobi'),
         ('P.O. Box 11673, Nairobi, 0020', 'S.L.P. 11673, Nairobi, 00200'),
+        ('title="Kirima House Location Map"', 'title="Ramani ya Mahali pa Kirima House"'),
+        ('Open in Google Maps &rarr;', 'Fungua kwenye Google Maps &rarr;'),
     ]
 
     all_translations = sorted(common_nav_replacements + translations, key=lambda pair: len(pair[0]), reverse=True)
@@ -259,6 +261,14 @@ sample_translations = [
     ('Enquire &rarr;', 'Ulizia &rarr;'),
     ('Verified in 1st Batch &bull; Form auto-filled below', 'Imethibitishwa katika Awamu ya 1 &bull; Fomu imejazwa hapa chini'),
     ('Enquiry: Parcel #${parcelNo} (${blockName}) - 1st Batch', 'Maulizo: Kiwanja #${parcelNo} (${blockName}) - Awamu ya 1'),
+    ('Plot Sold / Regularised', 'Kiwanja Kimeuzwa / Kimehalalishwa'),
+    ('Parcel <strong id="krSoldParcelText" style="color: #111827;">#2316</strong> under <strong>Block 220</strong> has already been sold and regularised. It is no longer available in the active inquiry directory.',
+     'Kiwanja <strong id="krSoldParcelText" style="color: #111827;">#2316</strong> chini ya <strong>Block 220</strong> kimeshauzwa na kuhalalishwa. Hakipatikani tena katika orodha ya maulizo ya sasa.'),
+    ('<span>&bull; Status: Sold / Closed</span>', '<span>&bull; Hali: Kimeuzwa / Kimefungwa</span>'),
+    ('Verify Title / Regularisation Record &rarr;', 'Thibitisha Hatimiliki / Rekodi ya Uhalalishaji &rarr;'),
+    ("Enquiry: Sold / Regularised Parcel #${query || 'Block 220'} (Title Verification)", "Maulizo: Kiwanja Kilichouzwa / Kimehalalishwa #${query || 'Block 220'} (Uthibitisho wa Hatimiliki)"),
+    ("Hello Kirima Rise team,\\n\\nI am contacting you regarding Parcel #${query || 'under Block 220'}, which is recorded as sold / regularised.\\n\\nCould you please verify the title ownership and regularisation record for this parcel?\\n\\nThank you.",
+     "Habari timu ya Kirima Rise,\\n\\nNinawasiliana nanyi kuhusu Kiwanja #${query || 'chini ya Block 220'}, ambacho kimeandikwa kama kimeuzwa / kimehalalishwa.\\n\\nTafadhali thibitisheni uhalali wa umiliki wa hatimiliki na kumbukumbu ya kurasimishwa kwa kiwanja hiki?\\n\\nAsante."),
 
     # Contact Details
     ('Project Office', 'Ofisi ya Mradi'),

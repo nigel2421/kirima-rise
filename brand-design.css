@@ -774,6 +774,41 @@ textarea:focus {
     margin-top: 3px !important;
 }
 
+/* Footer Mini Map */
+.kr-footer-map-wrap {
+    margin-top: 14px !important;
+    margin-bottom: 16px !important;
+    max-width: 100% !important;
+}
+
+.kr-footer-map-frame {
+    width: 100% !important;
+    height: 135px !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 8px !important;
+    display: block !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    background-color: #2b0b0d !important;
+}
+
+.kr-footer-map-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-family: var(--kr-font-serif) !important;
+    font-size: 13px !important;
+    color: #FAF7F2 !important;
+    opacity: 0.9 !important;
+    text-decoration: underline !important;
+    margin-top: 6px !important;
+    transition: opacity 0.2s ease, color 0.2s ease !important;
+}
+
+.kr-footer-map-link:hover {
+    opacity: 1 !important;
+    color: #FFFFFF !important;
+}
+
 /* Social Icon Buttons */
 .kr-footer-socials {
     display: flex !important;
