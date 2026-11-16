@@ -133,6 +133,13 @@ home_translations = [
     ('Follow our on-the-ground progress, title deed issuances, and community engagements directly from the Estate of GK Kirima on YouTube.',
      'Fuata maendeleo yetu mashinani, utoaji wa hatimiliki, na ushirikishwaji wa jamii moja kwa moja kutoka Shirika la Urithi wa GK Kirima kwenye YouTube.'),
     ('Watch on YouTube', 'Tazama kwenye YouTube'),
+    ('Regularisation Update', 'Taarifa ya Uhalalishaji'),
+    ('Regularisation Process Has Started (Kikuyu)', 'Mchakato wa Uhalalishaji Umeanza (Kikuyu)'),
+    ('Regularisation Process Has Started (Kiswahili)', 'Mchakato wa Uhalalishaji Umeanza (Kiswahili)'),
+    ('The regularisation process is officially underway. Watch this update in Kikuyu to learn how to begin your application and visit our Kirima House offices on Mokhtar Daddah Street for assistance.',
+     'Mchakato wa uhalalishaji umeanza rasmi. Tazama taarifa hii kwa Kikuyu ili kufahamu jinsi ya kuanza maombi yako na kutembelea ofisi zetu za Kirima House katika Mtaa wa Mokhtar Daddah kwa usaidizi.'),
+    ('The regularisation process is officially underway. Watch this update in Kiswahili to learn how to begin your application and visit our Kirima House offices on Mokhtar Daddah Street for assistance.',
+     'Mchakato wa uhalalishaji umeanza rasmi. Tazama taarifa hii kwa Kiswahili ili kufahamu jinsi ya kuanza maombi yako na kutembelea ofisi zetu za Kirima House katika Mtaa wa Mokhtar Daddah kwa usaidizi.'),
     ('First Batch of Title Deeds Issued to Njiru Residents', 'Awamu ya Kwanza ya Hatimiliki Yatolewa kwa Wakazi wa Njiru'),
     ('Title Deeds', 'Hatimiliki'),
     ('Official Release', 'Taarifa Rasmi'),
@@ -142,6 +149,12 @@ home_translations = [
     ('Stakeholder, Financial & Resident Engagement', 'Ushirikishwaji wa Wadau, Mashirika ya Kifedha na Wakazi'),
     ('We at Kirima Rise have made sure to engage local residents, financial institutions and local government to make the regularization process as smooth and straightforward as possible, ensuring every resident has support.',
      'Sisi katika Kirima Rise tumehakikisha tunashirikisha wakazi wa eneo hilo, taasisi za kifedha na serikali ya mtaa ili kufanya mchakato wa uhalalishaji uwe mwepesi na wazi iwezekanavyo, kuhakikisha kila mkazi anapata usaidizi.'),
+    ('Lands CS Alice Wahome: Contested Njiru Land Belongs to Kirima Family - TV47 Kenya', 'Waziri wa Ardhi Alice Wahome: Ardhi ya Njiru Inayobishaniwa Ni ya Familia ya Kirima - TV47 Kenya'),
+    ('Lands CS Alice Wahome: Contested Njiru Land Belongs to Kirima Family', 'Waziri wa Ardhi Alice Wahome: Ardhi ya Njiru Inayobishaniwa Ni ya Familia ya Kirima'),
+    ('Government Statement', 'Kauli ya Serikali'),
+    ('Official Statement', 'Taarifa Rasmi'),
+    ('Lands Cabinet Secretary Alice Wahome confirms that the contested Njiru land legally belongs to the Kirima family, affirming the legal standing and encouraging orderly regularisation for all occupants.',
+     'Waziri wa Ardhi Alice Wahome athibitisha kisheria kwamba ardhi ya Njiru ni mali halali ya familia ya marehemu Gerishon Kirima, na kutoa wito wa utatuzi wa amani na urasimishaji kwa wakazi wote.'),
 ]
 
 # --- 2. ABOUT PAGE TRANSLATIONS (about/index.html) ---
